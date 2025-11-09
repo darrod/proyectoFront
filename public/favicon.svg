@@ -1,0 +1,12 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64" role="img" aria-label="Origen Tours">
+  <defs>
+    <linearGradient id="gradient" x1="0%" x2="100%" y1="0%" y2="100%">
+      <stop offset="0%" stop-color="#1b8aff"/>
+      <stop offset="100%" stop-color="#ff7a2b"/>
+    </linearGradient>
+  </defs>
+  <rect width="64" height="64" rx="12" fill="#0f172a"/>
+  <path d="M12 40c10-10 30-10 40 0" stroke="url(#gradient)" stroke-width="4" fill="none" stroke-linecap="round"/>
+  <path d="M32 16l8 12h-16z" fill="url(#gradient)"/>
+</svg>
+
