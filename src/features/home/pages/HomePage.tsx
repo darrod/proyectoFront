@@ -45,7 +45,7 @@ export function HomePage() {
         <div className="relative h-72 overflow-hidden rounded-3xl shadow-lg md:h-full">
           <img
             src={heroIllustrationUrl}
-            alt="Ilustración de experiencias culturales y naturaleza luminosa"
+            alt="Ilustración de la Sierra Nevada de Santa Marta con mar Caribe y casas indígenas"
             className="h-full w-full object-cover"
           />
           <div className="absolute inset-0 bg-gradient-to-tr from-black/40 to-transparent" />

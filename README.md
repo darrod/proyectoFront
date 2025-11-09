@@ -78,5 +78,3 @@ Vite realiza recargas automáticas en cuanto se guardan cambios. Si necesitas fo
 - Conectar con la API del backend (`projectBack`) para obtener catálogos dinámicos.
 - Añadir pruebas de componentes con Vitest + React Testing Library.
 - Crear un sistema de diseño compartido con tokens tipográficos y de espaciado.
-
-# proyectoFront

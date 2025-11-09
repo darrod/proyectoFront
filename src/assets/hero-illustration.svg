@@ -1,29 +1,120 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 480 360">
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 480 360" role="img" aria-labelledby="title desc">
+  <title id="title">Sierra Nevada de Santa Marta</title>
+  <desc id="desc">Ilustración estilizada con el mar Caribe, la Sierra Nevada y casas indígenas.</desc>
   <defs>
     <linearGradient id="sky" x1="0%" y1="0%" x2="0%" y2="100%">
-      <stop offset="0%" stop-color="#0f172a" />
-      <stop offset="100%" stop-color="#1b8aff" />
+      <stop offset="0%" stop-color="#5fb2ff" />
+      <stop offset="70%" stop-color="#c6ecff" />
+      <stop offset="100%" stop-color="#fdfdfd" />
     </linearGradient>
-    <linearGradient id="aurora" x1="0%" y1="0%" x2="100%" y2="0%">
-      <stop offset="0%" stop-color="#1b8aff" />
-      <stop offset="100%" stop-color="#ff7a2b" />
+    <linearGradient id="sea" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#00a0c6" />
+      <stop offset="100%" stop-color="#006f9c" />
+    </linearGradient>
+    <linearGradient id="mountainHigh" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#fdfbfb" />
+      <stop offset="100%" stop-color="#d1e0f2" />
+    </linearGradient>
+    <linearGradient id="mountainMid" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#8fb0d6" />
+      <stop offset="100%" stop-color="#4e6f9f" />
+    </linearGradient>
+    <linearGradient id="mountainLow" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#5f8f5c" />
+      <stop offset="100%" stop-color="#34623f" />
+    </linearGradient>
+    <linearGradient id="sand" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#f6d696" />
+      <stop offset="100%" stop-color="#d7b26f" />
     </linearGradient>
   </defs>
+
+  <!-- Sky -->
   <rect width="480" height="360" fill="url(#sky)" />
-  <path d="M0 260c60-40 120-40 180 0s120 40 180 0 120-40 120 0v100H0Z" fill="#0f172a" />
+
+  <!-- Sun -->
+  <circle cx="380" cy="80" r="32" fill="#ffd56a" opacity="0.9" />
+  <circle cx="380" cy="80" r="52" fill="#ffd56a" opacity="0.2" />
+
+  <!-- Mountains -->
   <path
-    d="M40 200c80-60 160-60 240 0s160 60 160 0"
+    d="M40 210 L140 120 L210 160 L270 110 L360 190 L480 150 L480 360 L0 360 Z"
+    fill="url(#mountainHigh)"
+  />
+  <path
+    d="M0 240 L80 170 L140 210 L220 150 L310 210 L400 170 L480 220 L480 360 L0 360 Z"
+    fill="url(#mountainMid)"
+    opacity="0.9"
+  />
+  <path
+    d="M0 270 L70 220 L160 250 L230 210 L320 250 L400 220 L480 270 L480 360 L0 360 Z"
+    fill="url(#mountainLow)"
+    opacity="0.9"
+  />
+
+  <!-- Sea -->
+  <path
+    d="M0 275 Q80 255 160 275 T320 275 T480 275 L480 360 L0 360 Z"
+    fill="url(#sea)"
+  />
+  <path
+    d="M0 285 Q80 265 160 285 T320 285 T480 285"
+    stroke="#9fe3ff"
+    stroke-width="6"
     fill="none"
-    stroke="url(#aurora)"
-    stroke-width="18"
-    stroke-linecap="round"
-    opacity=".8"
+    opacity="0.7"
   />
+
+  <!-- Beach -->
   <path
-    d="m180 160 70-24 90 32c6 3 6 12-1 14l-70 20a30 30 0 0 1-17 0L179 187c-7-2-8-11-1-14Z"
-    fill="#f8fafc"
-    opacity=".9"
+    d="M0 300 C120 280 220 300 320 290 C380 285 430 295 480 305 L480 360 L0 360 Z"
+    fill="url(#sand)"
+    opacity="0.95"
   />
-  <circle cx="360" cy="96" r="24" fill="#fbbf24" opacity=".7" />
+
+  <!-- Indigenous houses -->
+  <g transform="translate(90 280)">
+    <ellipse cx="0" cy="32" rx="42" ry="12" fill="rgba(0,0,0,0.12)" />
+    <path
+      d="M-28 5 L0 -28 L28 5 Z"
+      fill="#b8873a"
+      stroke="#8a5b24"
+      stroke-width="2"
+    />
+    <rect x="-26" y="5" width="52" height="40" rx="6" fill="#d4a25f" stroke="#a77736" stroke-width="2" />
+    <rect x="-8" y="18" width="16" height="20" fill="#8a5b24" rx="3" />
+  </g>
+
+  <g transform="translate(210 290) scale(0.85)">
+    <ellipse cx="0" cy="32" rx="42" ry="12" fill="rgba(0,0,0,0.12)" />
+    <path
+      d="M-28 5 L0 -28 L28 5 Z"
+      fill="#c4974b"
+      stroke="#8a5b24"
+      stroke-width="2"
+    />
+    <rect x="-26" y="5" width="52" height="40" rx="6" fill="#e3b46b" stroke="#a77736" stroke-width="2" />
+    <rect x="-8" y="20" width="16" height="18" fill="#8a5b24" rx="3" />
+  </g>
+
+  <g transform="translate(340 275) scale(0.75)">
+    <ellipse cx="0" cy="32" rx="42" ry="12" fill="rgba(0,0,0,0.12)" />
+    <path
+      d="M-28 5 L0 -28 L28 5 Z"
+      fill="#caa060"
+      stroke="#8a5b24"
+      stroke-width="2"
+    />
+    <rect x="-26" y="5" width="52" height="40" rx="6" fill="#e6bf7a" stroke="#a77736" stroke-width="2" />
+    <rect x="-8" y="20" width="16" height="18" fill="#8a5b24" rx="3" />
+  </g>
+
+  <!-- Vegetation -->
+  <g fill="#2d7a4b">
+    <path d="M60 310 Q70 270 80 310 Z" />
+    <path d="M65 315 Q75 285 85 315 Z" opacity="0.8" />
+    <path d="M370 305 Q380 270 390 305 Z" />
+    <path d="M375 315 Q385 285 395 315 Z" opacity="0.8" />
+  </g>
 </svg>
 
